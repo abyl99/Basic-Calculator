@@ -13,16 +13,16 @@ def multiplication(x,y):
     return x*y
 
 
-print("Select operation")
-print("For addition, write a")
-print("For subtraction, write s")
-print("For multiplication, write m")
+print('Select operation')
+print('For addition, write a')
+print('For subtraction, write s')
+print('For multiplication, write m')
 print()
 
 while True: 
     #Player is asked to enter a choice
     
-    choice = input("Enter choice:")
+    choice = input('Enter choice:')
     
     print()
     
@@ -30,28 +30,28 @@ while True:
     if choice in ('a', 's', 'm'):
         
         #x is the first number entered
-        x = int(input("Enter first number: "))
+        x = int(input('Enter first number: '))
         
         #y is the second number entered
-        y = int(input("Enter second number: "))
+        y = int(input('Enter second number: '))
         
         #Check if choice is a
-        if choice == "a":
+        if choice == 'a':
             #Printing the function addition of x and y
-            print(x, "+", y, "=", addition(x,y))
+            print(x, '+', y, '=', addition(x,y))
             
         #Check if choice is s
-        elif choice == "s":
+        elif choice == 's':
             
             #Printing the function subtraction of x and y
-            print(x, "-", y, "=", subraction(x,y))
-            
+            print(x, '-', y, '=', subraction(x,y))
+           
           #Check if choice is m
-        elif choice == "m":
+        elif choice == 'm':
             
              #Printing the function multiplicatoin of x and y
-            print(x, "*", y, "=", multiplication(x,y))
+            print(x, '*', y, '=', multiplication(x,y))
             
     #Check if choice is other than a,s or m
     else:
-        print("Invalid entry. Try again")
+        print('Invalid entry. Try again')
